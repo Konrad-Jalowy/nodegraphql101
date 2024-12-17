@@ -11,4 +11,6 @@ const books = [
     },
   ];
 
-module.exports = books;
+exports.getAllBooks = function(){
+    return books;
+};

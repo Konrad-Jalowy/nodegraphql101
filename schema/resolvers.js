@@ -1,8 +1,8 @@
-const books = require("../data/books");
+const Books = require("../data/books");
 
 const resolvers = {
     Query: {
-      books: () => books,
+      books: Books.getAllBooks,
     },
   };
 
