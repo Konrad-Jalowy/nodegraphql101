@@ -14,3 +14,9 @@ const books = [
 exports.getAllBooks = function(){
     return books;
 };
+
+exports.getBookById = function(id){
+    return books.find((book) => {
+        return book.id === id;
+      });
+};
