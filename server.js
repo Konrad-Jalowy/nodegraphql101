@@ -22,6 +22,12 @@ const books = [
     },
   ];
 
+  const resolvers = {
+    Query: {
+      books: () => books,
+    },
+  };
+
 const server = new ApolloServer({ typeDefs, resolvers });
 
 server.listen().then(({ url }) => {
