@@ -9,6 +9,11 @@ const resolvers = {
         return Books.getBookById(args.id)
       }
     },
+    Mutation: {
+        addNewBook: (_, args) => {
+            return Books.addNewBook(args.title, args.author);
+          },
+    }
   };
 
 module.exports = resolvers;

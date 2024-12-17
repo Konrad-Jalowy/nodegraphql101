@@ -1,4 +1,4 @@
-let _id = books.length;
+
 
 const books = [
     {
@@ -12,6 +12,7 @@ const books = [
       author: 'Paul Auster',
     },
   ];
+  let _id = books.length;
 
 function getNextId(){
     return ++_id;
@@ -28,9 +29,9 @@ exports.getBookById = function(id){
 };
 
 exports.addNewBook = function(title, author) {
-    let _newId = getNextIdI();
+    let _newId = getNextId();
     const _newBook = {
-      id: _newId,
+      id: `${_newId}`,
       title,
       author
     };
