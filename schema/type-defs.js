@@ -10,7 +10,8 @@ const typeDefs = gql`
     books: [Book]
     book(id: ID!): Book
   }
-    type Mutation {
+   
+   type Mutation {
   addNewBook(title: String! author: String!): Book
   }
 `;
