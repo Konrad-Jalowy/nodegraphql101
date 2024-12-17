@@ -1,3 +1,5 @@
+let _id = books.length;
+
 const books = [
     {
       id: "1",
@@ -10,6 +12,10 @@ const books = [
       author: 'Paul Auster',
     },
   ];
+
+function getNextId(){
+    return ++_id;
+};
 
 exports.getAllBooks = function(){
     return books;
