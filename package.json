@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Konrad-Jalowy/nodegraphql101/issues"
   },
-  "homepage": "https://github.com/Konrad-Jalowy/nodegraphql101#readme"
+  "homepage": "https://github.com/Konrad-Jalowy/nodegraphql101#readme",
+  "dependencies": {
+    "apollo-server": "^3.13.0",
+    "dotenv": "^16.4.7"
+  }
 }
