@@ -1,16 +1,7 @@
 const { ApolloServer } = require("apollo-server");
 const typeDefs = require("./schema/type-defs");
+const books = require("./data/books");
 
-const books = [
-    {
-      title: 'The Awakening',
-      author: 'Kate Chopin',
-    },
-    {
-      title: 'City of Glass',
-      author: 'Paul Auster',
-    },
-  ];
 
   const resolvers = {
     Query: {
