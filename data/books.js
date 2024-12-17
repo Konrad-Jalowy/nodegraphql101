@@ -26,3 +26,15 @@ exports.getBookById = function(id){
         return book.id === id;
       });
 };
+
+exports.addNewBook = function(title, author) {
+    let _newId = getNextIdI();
+    const _newBook = {
+      id: _newId,
+      title,
+      author
+    };
+  
+    books.push(_newBook);
+    return _newBook;
+  }
