@@ -10,7 +10,11 @@ const typeDefs = gql`
     books: [Book]
     book(id: ID!): Book
   }
-   
+   input createBookInput {
+    title: String!
+    author: String!
+    
+  }
    type Mutation {
   addNewBook(title: String! author: String!): Book
   }
